@@ -6,6 +6,7 @@ provider "aws" {
 resource "aws_s3_bucket" "frontend_bucket" {
     bucket = "resume-frontend-bucket-819383208824"
     policy = file("policy.json")
+    force_destroy = true
 
 }
 
